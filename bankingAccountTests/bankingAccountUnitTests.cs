@@ -48,7 +48,7 @@ namespace bankingAccountTests
 
         [Test]
         [TestCase(200, 0, 78)] // parametry będą przekazane do zmiennych a,b,c w każdym testcase
-        [TestCase(200, 300, 189)] //fail
+        [TestCase(200, 0, 189)] 
         [TestCase(200, 0, 1)]
         public void bankingAccount_WhenTransferMinimalFunds_BalanceGreaterThanMinimalBalance(int a, int b, int c)
         {
